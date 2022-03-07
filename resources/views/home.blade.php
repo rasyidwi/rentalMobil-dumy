@@ -9,7 +9,12 @@
         </div>
         <div class="card-body">
             <p>
-                Alright, Bro bro. Now ! you can do anyting
+                Alright, Bro bro. Now ! you can do anyting 
+                @can('isAdmin')
+                Selamat datang Admin
+                @elsecan('isCustomer')
+                Selamat datang Customer
+                @endcan
             </p>
         </div>
     </div>
